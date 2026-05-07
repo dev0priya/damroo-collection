@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MODA &amp; CO | Digital Silk Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#707484",
+                        "primary": "#b90041",
+                        "secondary-fixed-dim": "#c2c5de",
+                        "on-tertiary-fixed-variant": "#424655",
+                        "inverse-surface": "#2e3132",
+                        "surface-dim": "#d9dadb",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#fefcff",
+                        "surface-container-low": "#f3f4f5",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary": "#575b6b",
+                        "on-surface-variant": "#5b4042",
+                        "surface-variant": "#e1e3e4",
+                        "outline": "#8f6f72",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#ffd9dc",
+                        "on-secondary-container": "#5e6177",
+                        "surface-container": "#edeeef",
+                        "on-background": "#191c1d",
+                        "primary-fixed-dim": "#ffb2ba",
+                        "on-secondary-fixed": "#161b2d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#df2457",
+                        "on-tertiary-fixed": "#171b28",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed": "#dfe2f4",
+                        "on-primary-fixed": "#400011",
+                        "surface-tint": "#bd0043",
+                        "tertiary-fixed-dim": "#c2c6d7",
+                        "secondary-fixed": "#dee1fa",
+                        "secondary-container": "#dbdef8",
+                        "secondary": "#5a5d73",
+                        "on-primary-container": "#fffbff",
+                        "outline-variant": "#e3bdc0",
+                        "inverse-primary": "#ffb2ba",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9fa",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#42465a",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#910031"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "0.25rem",
+                        "xl": "2.5rem",
+                        "md": "1rem",
+                        "lg": "1.5rem",
+                        "sm": "0.5rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "headline-lg": ["Noto Serif"],
+                        "headline-xl": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-[100] bg-surface/95 dark:bg-surface-dim/95 border-b border-outline-variant/30 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tighter">MODA &amp; CO</span>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Shop</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-secondary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Trending</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-secondary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">New arrivals</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-secondary-container hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Collections</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container border-none rounded-full w-64 font-label-md text-label-md focus:ring-1 focus:ring-primary" placeholder="Search for luxury..." type="text"/>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-all"><span class="material-symbols-outlined">person</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-all"><span class="material-symbols-outlined">favorite</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-all"><span class="material-symbols-outlined">shopping_bag</span></button>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Editorial fashion portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_wz1pM3ltP5mXcIngYmYeSBHktQRuYS-K9M3BktwiWf8e7B6qnWqTSnJ04mS17b3Hj6ifQZjSG2rjSfTugLMTGY85PpVdqwAECkBxur7AkeMTbLHuVHLxiAvJ_i4dHfELqsg2_25xzrcET56CfOHuPrXj-zwqdn5scSiS2eRXZNwPqh0sbqhGTeRKpE36sDvus_SsjvpPz3eEO7t4JelwfQhQP5Nrt-MPh55xvSrIRvlo7pPYBOlOtwkwpM_rXlaxjwxS8wFokbYj"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/80 via-surface/20 to-transparent"></div>
+</div>
+<div class="relative z-10 px-gutter max-w-container-max mx-auto w-full">
+<div class="max-w-xl">
+<span class="font-label-lg text-label-lg text-primary tracking-widest block mb-md">EDITORIAL COLLECTION 2024</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-lg">The Essence of Digital Silk</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl">Curated luxury for the modern individual. Discover pieces that bridge the gap between high-street trends and boutique exclusivity.</p>
+<button class="bg-primary text-on-primary font-label-lg text-label-lg px-xl py-md rounded-full hover:shadow-lg transition-all active:scale-95">Shop the Look</button>
+</div>
+</div>
+</section>
+<!-- 1. Hot Deals Section -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex items-center justify-between mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Hot Deals</h2>
+<span class="text-primary font-label-lg flex items-center gap-xs">Exclusive Offers <span class="material-symbols-outlined">bolt</span></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="relative group overflow-hidden rounded-xl h-64 cursor-pointer">
+<img alt="Brand Promo 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAASK5S7fsgdX2V6UPb1zdoK58wEtzaCbLOvm6lkgI7DqM8Ayb_gTBdDW0q13420zXCYVgHku6UCn_z0Xx0f4PuZhxoLo6HWoLGwt3xn2sva9XvvWNE9dgMs0ykjuRHumazKCQ3OiVf-6SOaosXtQtlBIt76UqFOHa6cvV-qfAlKm58wBIWpTy26z4hZKScJcmi8KmfueJfR1BPkFlmJC242D54AJTD8briNvoSdua2ISEEF8e6D457j71PAEjOech9Pc_ENfPC-sxW7"/>
+<div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-lg">
+<span class="font-label-lg text-white/90 tracking-widest uppercase mb-xs">Urban Chic</span>
+<h3 class="font-headline-md text-white mb-md">UP TO 50% OFF</h3>
+<div class="w-fit bg-white text-on-surface font-label-md px-md py-sm rounded-full group-hover:bg-primary group-hover:text-on-primary transition-colors">Shop Now</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-64 cursor-pointer">
+<img alt="Brand Promo 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs3PjSr3VGzG1GeauiPZohFHi5agElwWCM-4CFLAizt3SnZ8GHj3Ai30Kmdd7UZx37BU0-8WRCndxT88Ud-AmdmQOdCkvLTE_HhbpOLBzWFZdjgH4n4JH9n_osiTWqbed2XIbqKMaomsJrB-1N7Fs5hlK6hT9d7_4q9XBQ3jxq_nrSZHkuiF-75ffVbfeMQ7oTVkXZFzNEvrsO_6CKoS9ciOqY4ejYVwDyhGbC1icMTmRS3_GJ_dMxnVBxo8GvgZ8QBkgXvdxEHfiD"/>
+<div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-lg">
+<span class="font-label-lg text-white/90 tracking-widest uppercase mb-xs">Summer Essentials</span>
+<h3 class="font-headline-md text-white mb-md">30% OFF ACCESSORIES</h3>
+<div class="w-fit bg-white text-on-surface font-label-md px-md py-sm rounded-full group-hover:bg-primary group-hover:text-on-primary transition-colors">Discover</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-64 cursor-pointer">
+<img alt="Brand Promo 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaKMSgH54YuMCuMyxaiabYyPsg03ST3nG07o2VaqJaPVsebnRsLaCFGNdbckRTaCtewyjRn4k1wWeus_9MR-KhE_82cI1TEtbpDwVXu1UTpFRjFrIHAcJm0V255e9bmB-yAFv6UrpyNy8LKEj0nuu9bsp1txeCc0Gs3sFuxKyEpdVF7JO9EcKcPtoe_i8dNKtEF_459Mct6eLDxscpD80jnav7ZRU-RYu1Xd0f9L-EnaK2kYEww6qvL03ZpCrNikaEDZZGfIVboubz"/>
+<div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-lg">
+<span class="font-label-lg text-white/90 tracking-widest uppercase mb-xs">Luxury Edit</span>
+<h3 class="font-headline-md text-white mb-md">BUY 2 GET 1 FREE</h3>
+<div class="w-fit bg-white text-on-surface font-label-md px-md py-sm rounded-full group-hover:bg-primary group-hover:text-on-primary transition-colors">Redeem</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-gutter py-lg grid grid-cols-1 md:grid-cols-3 gap-lg text-center">
+<div class="flex items-center justify-center gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider">Authenticity Guaranteed</span>
+</div>
+<div class="flex items-center justify-center gap-md border-y md:border-y-0 md:border-x border-outline-variant/30 py-md md:py-0">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider">100% Secure Payments</span>
+</div>
+<div class="flex items-center justify-center gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">published_with_changes</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider">Easy 30-Day Returns</span>
+</div>
+</div>
+</section>
+<!-- Trending Collection -->
+<section class="py-xl max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-xl">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Trending Now</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The pieces everyone is talking about.</p>
+</div>
+<a class="text-primary font-label-lg border-b border-primary pb-0.5" href="#">View All Collections</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high mb-md shadow-[0_4px_20px_rgba(40,44,63,0.05)] group-hover:shadow-md transition-all">
+<img alt="Sculpted Blazer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DGL45jeD15wISvRgwcAGQjxZ1ZxJWs1Qu6CAAAdsIKFuqKDTShmuZclJjM7iJYbdevvc-iX_IwCBWu7MjD5SGvsrjGE8qSpAsG7buKM_OPm9GRTaZce_Qyi8MVfcp75KAYUnbrCoq-H-thcABJtgLq4nZIYnER9Q_lQVobqTv8Qrf2E48OwApKJEqv4wOLqHgBW1LHr-qsDtIOCxekr4a_SHgKx9OBSHlU_9fDMwD7iQfa6WaXRrdKEoK6mXzC0UhUPe2SWdDCFZ"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-on-primary font-label-md px-sm py-xs rounded">NEW</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-lg text-label-lg text-on-surface">The Sculpted Blazer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Quiet Luxury</p>
+<p class="font-label-lg text-label-lg text-primary">$289.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high mb-md shadow-[0_4px_20px_rgba(40,44,63,0.05)] group-hover:shadow-md transition-all">
+<img alt="Magenta Silk Blouse" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5fQkp9pZSZrR-Tyf9uaYiQpjygO5K5KPOkifOefioONlvTo1cZrSXiw3ceGu0mJpDRC9h4EZC-Ric_dvlRwgpW5RZvM5C8tafkUsyjd7r2_lzGBFqBzATWoQaW40Go_nDosQsJZ7QnHiJJEd7PZVIfgV_3gQj4Fpb0q7za_lFGHYChh2OjwlRgbWtQWj6QSwbn6g31pa3eMHPpMYstvLUlaVJetu1IzZmgT2aMTg6X6VIF0wx9USqAh-NYh_MEJBnuPes4WF2zMTt"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-lg text-label-lg text-on-surface">Magenta Silk Blouse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trend-setters</p>
+<p class="font-label-lg text-label-lg text-primary">$145.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high mb-md shadow-[0_4px_20px_rgba(40,44,63,0.05)] group-hover:shadow-md transition-all">
+<img alt="Essential Slip" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUkpAp5DrMIcfrQWU2ERqkX0slYyQMo886CQUCAW8O1TM0zBruAhj3qC68mHpzm35UI3PVO5Ah1t_mvrHcXPldDfcnXk7wNmN1SD2VxAjcLNjjRs2j2B9k0eIFhmPoNxXVvJRODmqehkJlrwaRBYiNPC7ZkwWDoQWtjBZcc5rb66vh57iML_j5OfZCtgljMk6bjLvqgqz2vflhz_ib3pL1OfKeKOHMAVO0OFqpnAN4vQ7UajJ4VZPO0MMOQw813fdtWLpKxJCesx8C"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-lg text-label-lg text-on-surface">The Essential Slip</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Quiet Luxury</p>
+<p class="font-label-lg text-label-lg text-primary">$195.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high mb-md shadow-[0_4px_20px_rgba(40,44,63,0.05)] group-hover:shadow-md transition-all">
+<img alt="Architectural Knitwear" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZnUWqDEWk1ZlucmDvxNfUP92r5-qKL9pEhZwHqGzOgWwNI4kWZ90O3PSsnaHBdI_8rrzdLxdPpXGryHA_M6aa28QAANyW7CcdgO2vvVROI-EodwtXKLipsh4kTJEwhV-01t8C6CU6PJCSi0VpVpQRXHDqdPCtRU359-xFVXi7j0Hf5YuL17m0xdVTm3URxabiwKMq2BTYjwVCoJz_kbIQVwVD3j6RVu7a8wMVPgCyp9CCQW9FXMKHOZRtA1iWRZZZo3VJz6Yo2PhG"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-lg text-label-lg text-on-surface">Architectural Knitwear</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trend-setters</p>
+<p class="font-label-lg text-label-lg text-primary">$210.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Philosophy Section -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<img alt="Boutique interior" class="w-full rounded-xl shadow-lg h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACckppPumPBVqPP6oZgx6EFLjqlYl43Qo-staPhl-NqMLOW3IBB9fkrnI73Usf9maFnLiWAwKu3-D7y2nUnhPVxxrBL12CWf_Amof3tFBY3bXNEnXclsrEic2PctRhhzx5TaUIweeGiK3ZzbnaSfm0UCciBJAG6zZj2-ErQwf2qHcUlwR2Oz5MEO1P22Ou2ccWPcco7NbWgxUTuROkTHxPDLhjTA1PW-PvzPyV7gEs-gZuL4BVUm-DMhFUKIRo4aHYjCk6DX8dBjpg"/>
+</div>
+<div class="order-1 md:order-2 space-y-lg">
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">The Narrative</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Our Philosophy</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        At MODA &amp; CO, we believe fashion is more than just clothing; it's a silent language of confidence. Founded on the principle of "Digital Silk," we curate a sensory experience that brings the meticulous craftsmanship of a luxury boutique to the effortless speed of modern e-commerce.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+                        "Luxury is not about the price tag; it's about the feeling of a perfect fit and the longevity of a well-told story."
+                    </p>
+<button class="font-label-lg text-label-lg border-2 border-on-surface px-lg py-sm rounded hover:bg-on-surface hover:text-surface transition-all">Read More About Us</button>
+</div>
+</div>
+</section>
+<!-- 2. About Us Section -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter text-center max-w-4xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">About Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-xl mt-xl">
+<div class="space-y-md">
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+<h3 class="font-headline-md text-headline-md">Our Mission</h3>
+<p class="font-body-md text-on-surface-variant">To democratize luxury by providing high-end, sustainable fashion accessible to everyone, everywhere.</p>
+</div>
+<div class="space-y-md">
+<span class="material-symbols-outlined text-primary text-4xl">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md">Our Values</h3>
+<p class="font-body-md text-on-surface-variant">Excellence, Integrity, and Innovation are at the core of every digital silk thread we weave into our collections.</p>
+</div>
+<div class="space-y-md">
+<span class="material-symbols-outlined text-primary text-4xl">groups</span>
+<h3 class="font-headline-md text-headline-md">Community</h3>
+<p class="font-body-md text-on-surface-variant">We are more than a brand; we are a collective of dreamers and trendsetters building the future of style.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Gallery -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter mb-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface text-center">Shop the Feed</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-center">Follow @MODAANDCO for daily inspiration</p>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-sm px-gutter">
+<div class="flex-shrink-0 w-64 md:w-80 group relative overflow-hidden">
+<img alt="Insta 1" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASK5S7fsgdX2V6UPb1zdoK58wEtzaCbLOvm6lkgI7DqM8Ayb_gTBdDW0q13420zXCYVgHku6UCn_z0Xx0f4PuZhxoLo6HWoLGwt3xn2sva9XvvWNE9dgMs0ykjuRHumazKCQ3OiVf-6SOaosXtQtlBIt76UqFOHa6cvV-qfAlKm58wBIWpTy26z4hZKScJcmi8KmfueJfR1BPkFlmJC242D54AJTD8briNvoSdua2ISEEF8e6D457j71PAEjOech9Pc_ENfPC-sxW7"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-surface text-on-surface font-label-md px-md py-sm rounded-full shadow-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> Shop Item
+                        </button>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 md:w-80 group relative overflow-hidden">
+<img alt="Insta 2" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs3PjSr3VGzG1GeauiPZohFHi5agElwWCM-4CFLAizt3SnZ8GHj3Ai30Kmdd7UZx37BU0-8WRCndxT88Ud-AmdmQOdCkvLTE_HhbpOLBzWFZdjgH4n4JH9n_osiTWqbed2XIbqKMaomsJrB-1N7Fs5hlK6hT9d7_4q9XBQ3jxq_nrSZHkuiF-75ffVbfeMQ7oTVkXZFzNEvrsO_6CKoS9ciOqY4ejYVwDyhGbC1icMTmRS3_GJ_dMxnVBxo8GvgZ8QBkgXvdxEHfiD"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-surface text-on-surface font-label-md px-md py-sm rounded-full shadow-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> Shop Item
+                        </button>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 md:w-80 group relative overflow-hidden">
+<img alt="Insta 3" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaKMSgH54YuMCuMyxaiabYyPsg03ST3nG07o2VaqJaPVsebnRsLaCFGNdbckRTaCtewyjRn4k1wWeus_9MR-KhE_82cI1TEtbpDwVXu1UTpFRjFrIHAcJm0V255e9bmB-yAFv6UrpyNy8LKEj0nuu9bsp1txeCc0Gs3sFuxKyEpdVF7JO9EcKcPtoe_i8dNKtEF_459Mct6eLDxscpD80jnav7ZRU-RYu1Xd0f9L-EnaK2kYEww6qvL03ZpCrNikaEDZZGfIVboubz"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-surface text-on-surface font-label-md px-md py-sm rounded-full shadow-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> Shop Item
+                        </button>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 md:w-80 group relative overflow-hidden">
+<img alt="Insta 4" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEq5c-BZmXKTq7zKEXs6cv_yXflkVMbaT2s3wNDP-TD--9-ofiXFTshKTj3pFHhdF_kSC_7s5ieBCXjGeoON3zJEnzgufcF4aYtxGJEBRGOZYTjCLabo7DDglEEwsR6Ssqr109dtHVVvQuMP3Y9w8KjTm3S-tAwjqzKdPhtoToEn6NTJlQrp_4sM6c1L7e__f5e_JmuwI-5zfiSpXoQeXBeSQCF79fopqTdkFzmlb2uC5OoCoL_i2A2CRsueY8UepZn3cAB45WBsSQ"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-surface text-on-surface font-label-md px-md py-sm rounded-full shadow-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> Shop Item
+                        </button>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 md:w-80 group relative overflow-hidden">
+<img alt="Insta 5" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH_efgUSgjZCGF-H_sYAhSDC-5R_Kv-fno0UKRRqLJxwaPNKSK8n_pTsb-cVVWZBJesWFOQtmRVaOpL9uw3gniBOX2toNyLHDP_buBdhA89hGBv__AxpgVSwEbg4mfD1OhjstNd_0hos3VI-4uEWxkZ36dVsmCGMAE7IlKAr9xcLk6tSjJf8Y70pR520ASx1dKpn1F--LmTsyg8JM84fMpGQ56kyA65xovE8P35hVhrtAGmj35GGNmhx09vTvHYdlENhYsMib5t4uG"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-surface text-on-surface font-label-md px-md py-sm rounded-full shadow-lg flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> Shop Item
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Reach to Us Section -->
+<section class="py-xl bg-surface-container-low border-t border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-xl">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Reach to Us</h2>
+<p class="font-body-lg text-on-surface-variant mb-xl">Have a question or want to share your digital silk journey? We'd love to hear from you.</p>
+<div class="space-y-lg">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<h4 class="font-label-lg uppercase text-primary">Email</h4>
+<p class="font-body-md">concierge@modaandco.com</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<h4 class="font-label-lg uppercase text-primary">Phone</h4>
+<p class="font-body-md">+1 (800) MODA-SILK</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-label-lg uppercase text-primary">Address</h4>
+<p class="font-body-md">72nd Luxury Ave, Digital Fashion District, NY 10022</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-xl shadow-sm border border-outline-variant/30">
+<form class="space-y-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg focus:ring-primary focus:border-primary px-md py-sm" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg focus:ring-primary focus:border-primary px-md py-sm" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface-variant">Subject</label>
+<select class="w-full bg-surface border-outline-variant rounded-lg focus:ring-primary focus:border-primary px-md py-sm">
+<option>Order Support</option>
+<option>Product Inquiry</option>
+<option>General Feedback</option>
+</select>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface border-outline-variant rounded-lg focus:ring-primary focus:border-primary px-md py-sm" placeholder="How can we help?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-lg py-md rounded-lg hover:shadow-lg transition-all active:scale-[0.98]" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface">
+<div class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between border-t border-outline-variant/10">
+<div class="mb-xl md:mb-0 md:w-1/3">
+<span class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface block mb-md">MODA &amp; CO</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant max-w-xs">
+                    Elevating your digital fashion experience through curated luxury and effortless elegance.
+                </p>
+<div class="flex gap-md mt-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-xl md:w-2/3">
+<div>
+<h4 class="font-label-lg text-label-lg text-primary mb-md uppercase tracking-widest">Customer Service</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Help Center</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Shipping Info</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary mb-md uppercase tracking-widest">Company Info</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Terms of Use</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/10">
+<p class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-fixed-variant text-center md:text-left">
+                © 2024 MODA &amp; CO. The Digital Silk Experience.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl flex justify-around items-center py-sm pb-safe bg-surface dark:bg-inverse-surface md:hidden border-t border-outline-variant/20 shadow-[0_-4px_20px_rgba(40,44,63,0.05)]">
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-variant/50 transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-md text-label-md">Categories</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-variant/50 transition-colors" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-label-md text-label-md">Wishlist</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-secondary-fixed-variant hover:bg-surface-variant/50 transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-label-md text-label-md">Bag</span>
+</a>
+</nav>
+</body></html>

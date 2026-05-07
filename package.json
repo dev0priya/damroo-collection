@@ -1,0 +1,31 @@
+{
+  "name": "damroo-collection",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Damroo Collection professional clothing e-commerce platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @damroo/api",
+    "dev:web": "npm run dev --workspace @damroo/web",
+    "dev:admin": "npm run dev --workspace @damroo/admin",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "db:generate": "npm run db:generate --workspace @damroo/db",
+    "db:migrate": "npm run db:migrate --workspace @damroo/db",
+    "db:seed": "npm run db:seed --workspace @damroo/db"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.24",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
