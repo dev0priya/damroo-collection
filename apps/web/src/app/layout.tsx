@@ -5,8 +5,11 @@ import { SiteHeader } from "../components/site-header";
 import { BottomNav } from "../components/bottom-nav";
 
 export const metadata: Metadata = {
-  title: "MODA & CO | Digital Silk Experience",
-  description: "Curated luxury for the modern individual."
+  title: "DAMROO COLLECTION | Digital Silk Experience",
+  description: "Curated luxury for the modern individual.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

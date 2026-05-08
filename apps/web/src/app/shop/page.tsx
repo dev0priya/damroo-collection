@@ -9,7 +9,7 @@ export default async function ShopPage({ searchParams }: { searchParams: { categ
   ]);
 
   const filtered = products.filter((product) => {
-    const categoryOk = searchParams.category ? product.category.slug === searchParams.category : true;
+    const categoryOk = searchParams.category ? product.category?.slug === searchParams.category : true;
     const queryOk = searchParams.q ? `${product.name} ${product.brand}`.toLowerCase().includes(searchParams.q.toLowerCase()) : true;
     return categoryOk && queryOk;
   });

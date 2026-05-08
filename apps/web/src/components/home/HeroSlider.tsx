@@ -15,12 +15,12 @@ const HERO_BANNERS = [
   },
   {
     id: 2,
-    title: "Modern Minimalist",
-    subtitle: "The Gentlemen's Edit",
-    description: "Tailored to perfection. Discover our latest range of premium menswear designed for the contemporary man.",
-    imageUrl: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=2070",
-    ctaText: "Explore Men",
-    ctaLink: "/shop?category=men"
+    title: "Minimalist Elegance",
+    subtitle: "The Neutral Palette",
+    description: "Discover our latest range of premium pieces in sophisticated cream and beige tones. Perfect for the modern minimalist.",
+    imageUrl: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2070",
+    ctaText: "Shop Collection",
+    ctaLink: "/shop"
   }
 ];
 

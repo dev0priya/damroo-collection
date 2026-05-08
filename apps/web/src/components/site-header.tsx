@@ -25,21 +25,21 @@ export function SiteHeader() {
     >
       <div className="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
         {/* Left Side: Logo + Nav */}
-        <div className="flex items-center gap-lg lg:gap-xl flex-1">
-          {/* Mobile Menu Button */}
+        <div className="flex items-center gap-2 md:gap-2xl flex-1">
+          {/* Mobile Menu Button - Left aligned on mobile */}
           <button 
-            className="md:hidden p-2 -ml-2 text-on-surface-variant hover:text-primary transition-all"
+            className="md:hidden p-2 -ml-2 text-on-surface-variant hover:text-primary transition-all z-20"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <span className="material-symbols-outlined text-[28px]">{isMobileMenuOpen ? "close" : "menu"}</span>
           </button>
 
-          {/* Logo - Pushed further to the left */}
-          <Link href="/" className="flex-shrink-0">
+          {/* Logo - Shifted slightly closer to hamburger on mobile */}
+          <Link href="/" className="flex-shrink-0 flex items-center">
             <img 
-              src="/dumroo-logo.png" 
-              alt="DUMROO" 
-              className="h-14 md:h-16 w-auto object-contain transition-transform hover:scale-105 duration-300" 
+              src="/damroo-logo.png" 
+              alt="DAMROO" 
+              className="h-10 md:h-20 w-auto object-contain transition-transform hover:scale-105 duration-300" 
             />
           </Link>
 

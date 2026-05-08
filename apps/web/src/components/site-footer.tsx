@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between border-t border-outline-variant/10">
         <div className="mb-xl md:mb-0 md:w-1/3">
           <Link href="/" className="block mb-md">
-            <img src="/dumroo-logo.png" alt="DUMROO" className="h-16 w-auto object-contain" />
+            <img src="/damroo-logo.png" alt="DAMROO" className="h-16 w-auto object-contain" />
           </Link>
           <p className="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant max-w-xs">
             Elevating your digital fashion experience through curated luxury and effortless elegance.

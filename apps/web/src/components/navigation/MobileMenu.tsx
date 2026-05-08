@@ -57,7 +57,7 @@ export function MobileMenu({ categories, isOpen, onClose }: { categories: string
       {/* Sidebar Content */}
       <div className="absolute top-0 left-0 w-[85%] max-w-sm h-full bg-white shadow-2xl flex flex-col animate-in slide-in-from-left duration-300">
         <div className="p-gutter border-b border-outline-variant/20 flex justify-between items-center bg-surface-container-low">
-          <span className="font-headline-md text-primary font-bold tracking-tighter">DUMROO</span>
+          <span className="font-headline-md text-primary font-bold tracking-tighter">DAMROO</span>
           <button onClick={onClose} className="p-2 text-on-surface-variant"><span className="material-symbols-outlined">close</span></button>
         </div>
 
